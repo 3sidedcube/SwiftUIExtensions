@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-/// Model based on Sketch shadow properties.
+/// Model based on shadow properties.
+/// For example, properties defined in Sketch/Figma.
 ///
 /// - Note:
 /// Opacity/alpha is handled in the `color`
-public struct SketchShadow {
+public struct Shadow {
 
     /// Shadow color
     public var color: Color
@@ -55,11 +56,11 @@ public struct SketchShadow {
 
 // MARK: - Default
 
-public extension SketchShadow {
+public extension Shadow {
 
     /// `SketchShadow` with the default shadow properties
-    static var `default`: SketchShadow {
-        return SketchShadow(
+    static var `default`: Shadow {
+        return Shadow(
             color: .black.opacity(0), x: 0, y: -3, blur: 6, spread: 0
         )
     }
