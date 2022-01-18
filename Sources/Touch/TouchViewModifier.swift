@@ -5,6 +5,7 @@
 //  Created by Ben Shutt on 18/01/2022.
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 /// `ViewModifier` overlaying a `TouchView`
@@ -32,3 +33,4 @@ extension View {
         modifier(TouchViewModifier(onTouch: onTouch))
     }
 }
+#endif

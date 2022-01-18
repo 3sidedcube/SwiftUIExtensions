@@ -5,6 +5,7 @@
 //  Created by Ben Shutt on 18/01/2022.
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 /// `UIViewRepresentable` creating a `TouchUIView` to forward touch events
@@ -25,3 +26,4 @@ struct TouchView: UIViewRepresentable {
         // do nothing
     }
 }
+#endif

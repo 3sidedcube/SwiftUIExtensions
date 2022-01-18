@@ -5,6 +5,7 @@
 //  Created by Ben Shutt on 18/01/2022.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 /// `UIView` which forwards touch events with a callback closure.
@@ -91,3 +92,4 @@ class TouchUIView: UIView {
         onTouch?(type, location)
     }
 }
+#endif
