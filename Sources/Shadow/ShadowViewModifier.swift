@@ -25,6 +25,7 @@ struct ShadowViewModifier: ViewModifier {
     private func shadowView() -> some View {
         RoundedRectangle(cornerRadius: cornerRadius)
             .inset(by: -shadow.spread)
+            .fill(shadow.color)
             .blur(radius: shadow.blur, opaque: false)
             .shadow(
                 color: shadow.color,
